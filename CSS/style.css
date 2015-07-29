@@ -1,0 +1,85 @@
+*
+{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body 
+{
+
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    font-family: MS sans serif, arial, sans-serif;
+    color: #000;
+    background-color: rgba(155, 155, 155, 0.6);
+
+}
+
+canvas
+{
+
+    display: block;
+    border: 2px solid black;
+    margin: auto;
+    background-color: #FFF; 
+
+}
+
+form
+{
+
+    display: block;
+    margin: auto;
+
+}
+
+label
+{
+
+    margin: 15px 0;
+
+}
+
+input
+{
+
+    text-align: center;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+
+::-webkit-inner-spin-button { -webkit-appearance: none;}
+::-webkit-outer-spin-button { -webkit-appearance: none;}
+input[type=number] {-moz-appearance: textfield;}
+
+#settings
+{
+
+    padding: 20px;
+    height: 25%;
+    text-align: center;
+
+}
+
+#submit
+{
+
+    display: none;
+
+
+}
+
+.groupes
+{
+
+    display: block;
+    width: 70%;
+    margin: 10px 0;
+    text-align: right;
+
+}
