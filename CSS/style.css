@@ -24,7 +24,8 @@ canvas
     display: block;
     border: 2px solid black;
     margin: auto;
-    background-color: #FFF; 
+    background-color: #FFF;
+    box-shadow: 1px 1px 10px #000;
 
 }
 
@@ -40,6 +41,8 @@ label
 {
 
     margin: 15px 0;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px #FFF;
 
 }
 
@@ -50,6 +53,7 @@ input
     padding: 7px;
     border: 1px solid black;
     border-radius: 15px;
+    width: 10%;
 
 }
 
