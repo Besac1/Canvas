@@ -9,38 +9,51 @@ document.addEventListener('DOMContentLoaded', function () {
         gravity = 1,
         rebond = 0.8,
         frottements = 0.985,
-        form = document.querySelector('form');
+        form = document.querySelector('form'),
+        largeurInput = document.getElementById('largeurInput');
+
+    largeurInput.addEventListener('input', function () {
+
+        var i = largeurInput.value;
+
+        if (i >= 1 && i <= 2.5) {
+
+            largeurCanvas = canvas.width = window.innerWidth/i;
+
+        }
+
+    });
 
     form.addEventListener('keydown', function (e) {
 
         if (e.keyCode === 13) {
 
-            var champX = parseInt(document.getElementById('vitesseX').value),   
-                champY = parseInt(document.getElementById('vitesseY').value),
-                taille = parseInt(document.getElementById('taille').value),
-                g = parseFloat(document.getElementById('gravity').value);
+            var vitesseXInput = parseInt(document.getElementById('vitesseXInput').value),   
+                vitesseYInput = parseInt(document.getElementById('vitesseYInput').value),
+                tailleInput = parseInt(document.getElementById('tailleInput').value),
+                gravityInput = parseFloat(document.getElementById('gravityInput').value);
 
-            if (champX >= -30 && champX <= 30) {
+            if (vitesseXInput >= -30 && vitesseXInput <= 30) {
             
-                vitesseX = champX;
+                vitesseX = vitesseXInput;
 
             }
 
-            if (champY >= -30 && champY <= 30) {
+            if (vitesseYInput >= -30 && vitesseYInput <= 30) {
 
-                vitesseY = champY;
+                vitesseY = vitesseYInput;
 
             }
 
-            if (g > 0 && g < 1) {
+            if (gravityInput > 0 && gravityInput < 1) {
 
-                gravity = g;
+                gravity = gravityInput;
 
             } 
 
-            if (taille > 0 && taille <= 30) {
+            if (tailleInput > 0 && tailleInput <= 30) {
 
-                balle.rayon = taille;
+                balle.rayon = tailleInput;
 
             }
 
